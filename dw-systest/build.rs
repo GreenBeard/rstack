@@ -1,9 +1,9 @@
-extern crate ctest;
+extern crate ctest2;
 
 use std::env;
 
 fn main() {
-    let mut cfg = ctest::TestGenerator::new();
+    let mut cfg = ctest2::TestGenerator::new();
 
     let includedir = env::var_os("DEP_DW_INCLUDEDIR").unwrap();
     cfg.include(includedir);

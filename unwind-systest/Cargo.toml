@@ -1,6 +1,6 @@
 [package]
 name = "unwind-systest"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Steven Fackler <sfackler@palantir.com>"]
 
 [features]
@@ -11,4 +11,5 @@ unwind-sys = { path = "../unwind-sys" }
 libc = "0.2"
 
 [build-dependencies]
-ctest = "0.2"
+#ctest2 = "^0.3.1"
+ctest2 = { "git" = "https://github.com/GreenBeard/ctest2" }
